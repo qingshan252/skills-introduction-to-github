@@ -1,0 +1,186 @@
+
+<!DOCTYPE HTML>
+<html lang="lhj">
+<head>
+    <title>城乡网络对接平台 | Register ::: lhj.com.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="My School Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 420px;
+            margin: 10px auto;
+        }
+        p {
+            margin-top: 20px;
+            margin-left: 38px;
+        }
+        input {
+            margin-right: 20px;
+        }
+        .title {
+            text-align: center;
+        }
+        .submit {
+            text-align: center;
+        }
+        #submit {
+            background-color: rgb(216, 53, 53);
+        }
+        .red {
+            color: red;
+        }
+    </style>
+    <script>
+        addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        function sub() {
+        //如果全部输入正确返回成功  输入错误则输出提示
+            if(nameCheck() && emailCheck() && pwdCheck() && pwdSure()){
+                alert('提交成功');
+            }else{
+                alert('你的输入有误，请按要求输入后再提交');
+            }
+        }
+        //验证姓名字段
+        function nameCheck() {
+            let reg = /^[\u4e00-\u9fa5]{2,16}$/;
+            let name = $("#name").val();
+            if (!reg.test(name) || name=='') {
+                $(".name").html("<span class='red'>请输入2~6位中文</span>");
+                return false;
+            }else{
+                $(".name").text('√');
+                return true;
+            }
+        }
+        //验证邮箱字段
+        function emailCheck(str) {
+            let reg = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{1,8})$/;
+            let email = $("#email").val();
+            if(!reg.test(email) || email==''){
+                $(".email").html("<span class='red'>请输入正确的邮箱</span>")
+                return false;
+            }else{
+                $(".email").text('√');
+                return true;
+            }
+        }
+        //验证密码字段
+        function pwdCheck(str) {
+            let reg = /^[\w\s\S]{4,18}$/;
+            let pwd = $("#pwd").val();
+            if(!reg.test(pwd) || pwd==''){
+                $(".pwd").html("<span class='red'>请输入6-12位密码</span>")
+                return false;
+            }else{
+                $(".pwd").text('√');
+                return true;
+            }
+        }
+        //确认密码
+        function pwdSure() {
+            if ($("#pwd").val() === $("#pwd1").val()) {
+                return true;
+            } else {
+                $(".pwd1").html("<span class='red'>两次密码输入不一致</span>")
+                return false;
+            }
+        }
+    </script>
+ 
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="text/css" href="images/1.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+                <div id="logo">
+                    <h1><a href="index.html">“倾耳细听”——城乡网络对接平台 </a></h1>
+                </div>
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <label for="drop" class="toggle">菜单</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <li><a href="index.html">主页</a></li>
+                            <li><a href="index.html">简介</a></li>                       
+                            <li><a href="login.html">登录</a></li>
+                            <li><a href="register.html">注册</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="inner-banner-w3ls py-5" id="home">
+        <div class="container py-xl-5 py-lg-3">
+            <div class="modal-body mt-md-2 mt-5">
+                <h3 class="title-w3 mb-5 text-center text-wh font-weight-bold">现在注册</h3>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label class="col-form-label"><strong>用户名</strong></label>
+                        <input type="text" class="form-control" placeholder="your name" name="Name" required="" id="name" onblur="nameCheck()">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label"><strong>邮箱</strong></label>
+                        <input type="email" class="form-control" placeholder="**************@qq.com" name="Email"
+                            required="" onblur="sexCheck()">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label"><strong>密码</strong></label>
+                        <input type="password" class="form-control" placeholder="*****" name="Password" required="" onblur="telCheck()">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label"><strong>确认密码</strong></label>
+                        <input type="password" class="form-control" placeholder="*****" name="Password" required="" onblur="emailCheck()">
+                    </div>
+                    <div class="sub-w3l my-3">
+                        <div class="sub-w3layouts_hub">
+                            <input type="checkbox" id="brand1" value="">
+                            <label for="brand1" class="text-li text-style-w3ls">
+                                <span></span><strong>公司注册</strong></label>
+                        </div>
+                    </div>
+                    <div class="sub-w3l my-3">
+                        <div class="sub-w3layouts_hub">
+                            <input type="checkbox" id="brand1" value="">
+                            <label for="brand1" class="text-li text-style-w3ls">
+                                <span></span><strong>个人用户注册</strong></label>
+                        </div>
+                    </div>
+                    <div class="sub-w3l my-3">
+                        <div class="sub-w3layouts_hub">
+                            <input type="checkbox" id="brand1" value="">
+                            <label for="brand1" class="text-li text-style-w3ls">
+                                <span></span><strong>我接受此条款和条件</strong></label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn button-style-w3" onclick="sub()" id="submit">注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-w3ls py-4">
+        <div class="container">
+            <div class="row">
+                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">Email: 2936135216@qq.com | Design by 
+                </p>
+            </div>
+        </div>
+    </div>

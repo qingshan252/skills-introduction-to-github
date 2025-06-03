@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="lhj">
+<head>
+    <meta charset="UTF-8" />
+    <script>    
+        addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" type="text/css" href="images/23.jpg">
+  <style>
+     #gallery img:hover{
+        transform: scale(1.1,1.2);
+        -webkit-transform:scale(1.1,1.2);
+        -moz-transform:scale(1.1,1.2);
+        -o-transform:scale(1.1,1.2);
+        overflow: hidden;
+        -webkit-transition:all 1s ease-in-out;
+        -moz-transition:all 1s ease-in-out;
+        -o-transition:all 1s ease-in-out;
+        transition:all 1s ease-in-out;
+     }  
+  </style>
+</head>
+<body>
+    <header>
+    <div class="all">
+                </div>
+        <div class="container">
+            <div class="header d-lg-flex justify-content-between align-items-center py-2 px-sm-2 px-1">
+                <div id="logo"> 
+                </div>
+                <div class="nav_w3ls ml-lg-5">
+                    <nav>
+                        <strong><label for="drop" class="toggle">菜单</label></strong>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu">
+                            <strong><li><a href="index.html">主页</a></li>
+                            <li><a href="#about">简介</a></li>
+                            <li><a href="login.html">登录</a></li>
+                            <li><a href="register.html">注册</a></li></strong>  
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-w3pvt mian-content-wthree text-center" id="home">
+        <div class="container">
+            <div class="style-banner mx-auto">
+                <br><h3 class="text-wh font-weight-bold">欢迎来到<span>“倾耳细听”</span><br>城乡网络对接平台</h3>
+                <p class="mt-3 text-li" id="join">加入我们就现在</p>
+                <div class="home-form-w3ls mt-5">
+                    <form action="#" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="Name" placeholder="Your Name"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="Name" placeholder="Mobile Number"
+                                        required="">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn_apt btn">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w3ls-bnrbtm py-5" id="about">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-md-5 mb-sm-4 mb-2 text-center font-weight-bold">关于我们</h3>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <img src="images/12.jpg" alt="about" class="img-fluid mt-4" />
+                </div>
+                <div class="col-lg-6 pr-xl-5 mt-4">
+                    <h3 class="title-sub mb-4">需求导向的城乡网络对接平台其核心功能是实时、细化采集乡村发展需求并进行对接，我们的目标是尽最大力度缩减小城乡发展差距，进一步提升乡村民众生活水平，为实现共同富裕的伟大目标贡献自己的一份力量。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="services py-5" id="what">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-xl-5 mb-sm-4 mb-2 text-center text-wh font-weight-bold">模块</h3>
+            <div class="row w3pvtits-services-row text-center">
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-graduation-cap ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">教育</h4>
+                        <p class="text-left">师范类专业人才进行支教，提高乡村教学质量，使这些农村孩子受益匪浅，让一大部分学生在学业的道路上走得更远，从而改变家庭面貌，改变家乡面貌，成为对社会有用的人才来反哺家乡和祖国。
+                        </p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="#">阅读更多<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-users ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">农业</h4>
+                        <p class="text-left">农业技术人才对农业从业者进行技术指导、强化防范应对、深入灾害第一线进行技术导、指导农户科学有序地处置各类农业类灾害。使广大农业从业者对农业类灾害进行科学的防范，保障全年粮食丰收。
+</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="#">阅读更多<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-users ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">工程</h4>
+                        <p class="text-left">引进人才建设我国农村基础设施和公共服务体系，往村覆盖、往户延伸，围绕乡村道路、覆盖供水、能源利用、城乡物流、人居环境等方面进行建设，并保留文化底蕴从而建设新时代的“新农村”。
+</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="#">阅读更多<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 serv-w3mk mt-5">
+                    <div class="w3pvtits-services-grids">
+                        <span class="fa fa-users ser-icon" aria-hidden="true"></span>
+                        <h4 class="text-bl my-4">医疗</h4>
+                        <p class="text-left">引进医疗人才，加大对农村医疗事业的投入力度，医疗人才对乡村广大群众进行义诊，增加农村医疗队伍，提供现场诊疗服务，提升广大种植户的健康指数，为农业生产护航助力。
+</p>
+                        <a class="service-btn mt-xl-5 mt-4 btn" href="#">阅读更多<span class="fa fa-long-arrow-right ml-2"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="img-podi-w3ls">
+            <span class="fa fa-leanpub"></span>
+        </div>
+    </div>
+    <section class="contact py-5" id="contact">
+        <div class="container py-xl-5 py-lg-3">
+            <h3 class="title-w3 mb-sm-5 mb-4 text-center text-wh font-weight-bold">联系我们</h3>
+            <div class="contact_grid_right pt-4">
+                <form action="#" method="post">
+                    <div class="row contact_left_grid">
+                        <div class="col-lg-6 con-left" data-aos="fade-up">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="Email" placeholder="Email" required="">
+                            </div>     
+                        </div>
+                        <div class="col-lg-6 con-right" data-aos="fade-up">
+                            <div class="form-group">
+                                <textarea id="textarea" placeholder="Message" required=""></textarea>
+                            </div>
+                            <div class="sub-honey">
+                                <button class="form-control btn" type="submit"  onclick="alert('提交成功，请重新登录！')">提交</button>
+                                <!-- <p><input type="submit"  value="提交" onclick="alert('提交成功，请重新登录！')"/></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright-w3ls py-4">
+        <div class="container">
+            <div class="row">
+                <p class="col-lg-8 copy-right-grids text-wh text-lg-left text-center mt-lg-2">Email:2936135216@qq.com | Design by
+                    <a href="https://w3layouts.com/" target="_blank">lhj.com.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
